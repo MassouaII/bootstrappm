@@ -2,10 +2,18 @@
 @import "bootstrap/scss/bootstrap";
 @import "bootstrap/scss/mixins/buttons";
 
+//@mixin custom-btn($background, $border, $paddingx, $paddingy, $fontsize){
+//  @include button-variant($background);
+//  @include button-size($paddingx, $paddingy, $fontsize);
+//}
+//.mycustom-btn{
+//  @include custom-btn(transparent, 30px, 30px, 60px);
+//}
+
 //voorbeeld mixin
-.custom-btn{
-  @include button-outline-variant(#FF5733, #FF5733, #fff);
-}
+//.custom-btn{
+//  @include button-outline-variant(#FF5733, #FF5733, #fff);
+//}
 //voorbeeld2 mixin
 @mixin mybootstrap-button($background, $color, $paddingy, $paddingx, $borderradius, $fontsize){
   @include button-variant($color, $background);

@@ -3,14 +3,156 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
+    <title>Portfolio Marcelline</title>
     <script type="module" src="./js/main.js"></script>
 </head>
 <body>
-<div class="container py-4 px-3 mx-auto">
-    <h1>Hello, Bootstrap and Vite!</h1>
-    <button class="btn btn-mixin">Custom button</button>
-</div>
+<header class="container-fluid position-relative vh-100">
+    <div class="row">
+        <div class="col-lg-8 offset-2">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand mt-4 mt-lg-4" href="#">
+                        <img src="images/logo.png" alt="logo" width="64" height="64"></a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT ME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">MY WORKS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="position-absolute top-50 bottom-50 col-lg-8 offset-lg-2" id="hero">
+            <h1>I am Johnathan Doe</h1>
+            <button class="border border-4 border-black px-4 py-4 bg-transparent">Designer</button> <br>
+            <button width="64" height="64" class="bton border border-0 mt-60 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+            </svg></button>
+        </div>
+    </div>
+
+</header>
+<main>
+    <section class="bg-black text-white">
+        <header>
+            <h2 class="text-center pb-5">My Services</h2>
+        </header>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="row">
+                    <article class="col-md-6 col-lg-4">
+                        <img src="images/icon-brushes.png" alt="image brushes">
+                        <header><h3>Web Design</h3></header>
+                        <p>Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque</p>
+                    </article>
+                    <article class="col-md-6 col-lg-4">
+                        <img src="images/icon-camera.png" alt="image camera">
+                        <header><h3>Photography</h3></header>
+                        <p>Fusce lorem ex, fringilla eget consequat ut, molestie sit amet nibh. Nullam vitae
+                            tincidunt</p>
+                    </article>
+                    <article class="col-md-6 col-lg-4">
+                        <img src="images/icon-video.png" alt="image video">
+                        <header><h3>Video Editing</h3></header>
+                        <p>Aenean pretium nulla libero, vitae iaculis libero efficitur a. Fusce ut augue finibus
+                            quam</p>
+                    </article>
+                    <article class="col-md-6 col-lg-4">
+                        <img src="images/icon-pencil.png" alt="image pencil">
+                        <header><h3>Copy Writing</h3></header>
+                        <p>Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque</p>
+                    </article>
+                    <article class="col-md-6 col-lg-4">
+                        <img src="images/icon-lcd.png" alt="image lcd">
+                        <header><h3>Coding</h3></header>
+                        <p>Fusce lorem ex, fringilla eget consequat ut, molestie sit amet nibh. Nullam vitae
+                            tincidunt</p>
+                    </article>
+                    <article class="col-md-6 col-lg-4">
+                        <img src="images/icon-brushes.png" alt="image brushes">
+                        <header>App Developing</header>
+                        <p>Aenean pretium nulla libero, vitae iaculis libero efficitur a. Fusce ut augue finibus
+                            quam</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="bg-black">
+        <header>
+            <h2 class="text-center text-white pt-5 pb-5">About me</h2>
+        </header>
+        <div class="col-lg-8 offset-lg-2 d-flex">
+            <div class="w-50">
+                <img src="images/img-man-looking.jpg">
+            </div>
+            <div class="w-50 text-white">
+                <button class="border border-4 border-white px-4 py-4 bg-transparent text-white">Hi There!</button>
+                <p class="pt-5">In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo. Nulla in feugiat elit.</p>
+                <div class="row">
+                    <p class="col-lg-3 colorp">Name:</p>
+                    <p class="col-lg-3">Jonathan Doe</p>
+                    <p class="col-lg-3 colorp">Email:</p>
+                    <p class="col-lg-3">hello@example.com</p>
+                    <p class="col-lg-3 colorp">Phone:</p>
+                    <p class="col-lg-3">+12345678</p>
+                    <p class="col-lg-3 colorp">Twitter:</p>
+                    <p class="col-lg-3">frelance9</p>
+                </div>
+                <button width="64" height="64" class="bton border border-0 mt-60 text-white">
+                    CONTACT ME <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg></button>
+                <button width="64" height="64" class="border border-1 border- mx-4 mt-60 bg-transparent text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg> DONWLOAD CV</button>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black">
+        <div id="together" class="col-lg-8 offset-lg-2 text-center">
+            <header>
+                <h2 class="text-white text-center pt-5">Let's Work Together On Your Next Project!</h2>
+            </header>
+            <button width="64" height="64" class="bton border border-0 mt-60 text-white text-center">
+                HIRE ME NOW
+            </button>
+        </div>
+    </section>
+    <section class="bg-black">
+        <header>
+            <h2 class="text-white text-center pt-5">My Skills</h2>
+        </header>
+        <div>
+            <div class="w-50">
+                <header><h3>Every Day is a New Chalenge</h3></header>
+                <p>n id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentum ut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis quis leo. Nulla in feugiat elit.
+
+                    Phasellus accumsan scelerisque dolor, quis mattis justo bibendum non. Nulla sollicitudin turpis in enim elementum varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
+            </div>
+            <div class="w-50">
+
+            </div>
+        </div>
+    </section>
+</main>
 <script>
     AOS.init();
 </script>
